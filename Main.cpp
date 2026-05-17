@@ -1,17 +1,12 @@
 #include <iostream> 
-using namespace std;
+#include <map>
 
-struct LetterOccurences{
-    string letter;
-    int occurences;
-};
+using namespace std;
 
 int main() {        
     string word;
-    LetterOccurences letters[2] = {
-        {"a", 3}, 
-        {"c", 4}  
-    };
+
+    map<string, int> letters;
 
     cout << "Enter Input: "; 
     cin >> word;
