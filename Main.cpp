@@ -3,9 +3,12 @@ using namespace std;
 
 int main() {        
     string word;
-    std::cout << "Enter Input: "; 
-    std::cin >> word;
+    cout << "Enter Input: "; 
+    cin >> word;
 
-    cout << word;
+    for (char c : word) {
+        cout << c << " ";
+    }
+
     return 0;       
 }
